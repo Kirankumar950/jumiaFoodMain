@@ -38,6 +38,9 @@ import com.objectRepo.AdminPanelPage3;
 //		driver.findElement(By.name("submit")).click();
 public class AddMenuTest extends BaseClass2{
 
+	
+	
+	
 	@Test
 	public void addmenuModule() throws Throwable
 	{
