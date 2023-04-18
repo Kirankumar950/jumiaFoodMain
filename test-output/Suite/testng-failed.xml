@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="tests" name="Failed suite [Suite]">
-  <test thread-count="3" parallel="tests" name="Test runner-1(failed)">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="ordermodule.OrderModule">
+      <class name="com.practice.SeleniumGrid1">
         <methods>
-          <include name="orderModule"/>
-          <include name="configAM"/>
-          <include name="configBM"/>
-          <include name="configAS"/>
-          <include name="configAC"/>
-          <include name="configBS"/>
-          <include name="configBc"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- ordermodule.OrderModule -->
+      </class> <!-- com.practice.SeleniumGrid1 -->
     </classes>
-  </test> <!-- Test runner-1(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

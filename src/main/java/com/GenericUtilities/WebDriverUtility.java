@@ -272,7 +272,7 @@ public static String getScreenShot(WebDriver driver,String screenShotName) throw
 public void scrollBarAction(WebDriver driver)
 {
 	JavascriptExecutor jse=(JavascriptExecutor) driver;
-	jse.executeScript("Window.scrollBy(0,800)", "");
+	jse.executeScript("window.scrollBy(0,800)");
 }
 
 /**
@@ -285,7 +285,7 @@ public void scrollBarAction(WebDriver driver,WebElement element)
 {
 	JavascriptExecutor jse=(JavascriptExecutor) driver;
 	int y=element.getLocation().getY();
-	jse.executeScript("Window.scrollBy(0,"+y+")", element);
+	jse.executeScript("window.scrollBy(0,"+y+")");
 	//jse.executeScript("argument[0].scrollIntoView()",element);
 }
 
